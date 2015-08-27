@@ -1,0 +1,68 @@
+//============================================================
+//
+// Portfolio SCSS
+//
+// @description
+//   Portfolio module
+// @version 1.00
+//
+// @author M.Borra
+//
+//============================================================
+
+
+.portfolio {
+  @include grid-row();
+
+  padding-bottom: 55px;
+  padding-top: 45px;
+    
+    
+  img {
+  @include grid-column(12);
+  transition: opacity 1s linear;
+
+  margin-bottom: 16px;
+  opacity: 1;
+  @media #{$medium-up} {
+    @include grid-column(6);
+      margin-bottom: 32px; 
+    }
+  }
+
+  img:hover {
+    transition: opacity 0.5s linear;
+
+    opacity: 0.4; 
+  }
+}
+
+.reveal-modal {
+  @include grid-row();  
+
+  text-align: center;
+    
+  h2 {
+    margin-bottom: 12px !important;
+    margin-top: 27px !important;
+  }
+    
+  p {
+    @include grid-column(12);
+
+    font-size: rem-calc(17);
+    margin-top: 50px;
+    @media #{$medium-up} {
+      @include grid-column(8, $center: true); 
+    }
+  }
+    
+  img {
+    @include grid-column(12);
+
+    margin-top: 23px;
+    @media #{$medium-up} {
+    @include grid-column(6, $center: true); 
+    }
+  }
+}

@@ -1,0 +1,117 @@
+//============================================================
+//
+// Base SCSS
+//
+// @description
+//   Base SCSS
+// @version 1.00
+//
+// @author M.Borra
+//
+//============================================================
+
+body {
+  background-color: #f4f4f4;
+  font-family: $roboto;
+}
+
+.btn {
+  transition: background-color 0.2s ease-in; 
+
+  padding: 12px 25px 0 25px;
+  text-transform: uppercase;
+  background-color: #e23345;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 600;
+  display: table;
+  height: 50px;
+  margin: auto;
+  color: #fff;
+}
+
+.btn:hover {
+  transition: background-color 0.2s ease-in;
+
+  background-color: #c53241;
+  color: #fff;
+}
+
+.btn--white {
+  transition: background-color 0.2s ease-in; 
+
+  background-color: transparent;
+  border: 2px solid white;
+  font-weight: 300;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: $montserrat;
+  font-size: rem-calc(32);
+  letter-spacing: 1.8px;
+  margin-bottom: 45px;
+  text-align: center;
+  color: #5c5c5c;
+  opacity: 1;
+  @media #{$medium-up} {
+    margin-bottom: 35px; 
+  }  
+}
+
+.title--white {
+  color: #f2f2f2;    
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: $montserrat;
+  font-size: rem-calc(21);
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 20px;
+  font-weight: 300;
+  margin-top: 25px;
+  color: #fff;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-family: $montserrat;
+  font-size: rem-calc(14);
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 12px;  
+  color: #f2f2f2;  
+}
+
+p {
+  font-size: rem-calc(15);
+  text-align: center;
+  font-weight: 300;
+  color: #949494;
+}
+
+a {
+  font-family: $opensans;
+  color: #f44d5d;
+}
+
+a:hover {
+  color: #ff6877;
+}
+
+.background-color {
+  background-color: #292a2e;
+  max-width: none; 
+  width: 100%;
+}
+
+.backgroun-color--red {
+  background-color: #e23345; 
+}
+
+.background-color--grey {
+  background-color: #ececec; 
+}

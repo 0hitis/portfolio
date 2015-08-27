@@ -1,0 +1,7 @@
+.email {
+  @include grid-row();
+  
+	padding-bottom: 45px;
+  padding-top: 45px;
+  margin-top: -45px;  
+}

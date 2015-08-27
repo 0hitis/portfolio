@@ -1,0 +1,63 @@
+//============================================================
+//
+// Hero SCSS
+//
+// @description
+//   Hero module
+// @version 1.00
+//
+// @author M.Borra
+//
+//============================================================
+
+
+.hero {
+  background: url('../img/header.jpg');
+  background-position: center;
+  background-size: cover;
+  padding-top: 145px;
+  position: relative;
+  margin-top: -60px;
+  max-width: none;
+  margin: 0 auto;
+  height: 500px;
+  width: 100%; 
+  z-index: 0;
+  @media #{$medium-up} {
+    padding-top: 130px;
+  }
+
+  h3 {
+    margin-top: 22px;
+  }
+    
+  h4 {
+    margin-top: 22px;
+  }
+    
+  figure {
+    @include grid-row();
+        
+    @media #{$medium-up} {
+      @include grid-column(6, $center: true); 
+      }
+
+    img {
+      border: 6px solid white;
+      border-radius: 50%; 
+      display: block;
+      width: 195px;
+      margin: auto; 
+    }
+  }
+    
+  hr {
+    margin-bottom: 2px; 
+    background: #fff;  
+    margin-top: 10px; 
+    width: 200px;
+    margin: auto;
+    color: #fff;
+    height: 0px; 
+  }
+}
